@@ -11,7 +11,7 @@ class HelloWorldSpec extends Specification with Mockito {
       val invokeLater = mock[InvokeLater]
       invokeLater.apply(any) answers { f =>
         println("######### run in invokeLater")
-        f: Unit
+        f.asInstanceOf[Function0[Unit]](): Unit
       }
 
       val printString = mock[PrintString]

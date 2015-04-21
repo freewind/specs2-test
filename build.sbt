@@ -4,9 +4,9 @@ version := "1.0"
 
 organization := "org.my"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.11.6"
 
-sbtVersion := "0.13.5"
+sbtVersion := "0.13.8"
 
 resolvers ++= Seq(
   "ibiblio" at "http://mirrors.ibiblio.org/pub/mirrors/maven2",
@@ -16,5 +16,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.specs2" %% "specs2" % "3.5-20150421030134-582d033" % "test"
+  "org.specs2" %% "specs2-mock" % "3.3.1" % "test",
+  "org.specs2" %% "specs2" % "3.3.1" % "test"
 )

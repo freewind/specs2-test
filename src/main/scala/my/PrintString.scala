@@ -2,7 +2,7 @@ package my
 
 class PrintString {
 
-  def apply(s: String) = {
+  def apply(s: String): Unit = {
     println(s)
   }
 
